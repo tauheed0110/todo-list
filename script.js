@@ -67,7 +67,7 @@ function render(list, div) {
             div.innerHTML += `
             <div class="item">
                 <p>${index + 1}. ${data.name}</p>
-                <p>${date.toLocaleDateString()} ${date.toLocaleTimeString()}</p>
+                <p>${date.toLocaleDateString()}</p>
                 <p>${data.priority}</p>
                 <div class="icons">
                     <i class="fa-solid fa-trash" onclick='handleDelete(${data.id})'></i>
@@ -78,7 +78,7 @@ function render(list, div) {
             div.innerHTML += `
             <div class="item">
                 <p>${index + 1}. ${data.name}</p>
-                <p>${date.toLocaleDateString()} ${date.toLocaleTimeString()}</p>
+                <p>${date.toLocaleDateString()}</p>
                 <p>${data.priority}</p>
                 <div class="icons">
                     <i class="fa-solid fa-circle-check" onclick='handleComplete(${data.id})'></i>
