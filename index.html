@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/ac62e0a8c7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="main">
+        <h1>To-do List </h1>
+        <form action="">
+            <input type="text" id='item' placeholder="Item Name">
+            <input type="date" id='date' placeholder="Deadline">
+            <select name="priority" id="priority">
+                <option value="high">High</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+            </select>
+            <button id="add">Add Item</button>
+        </form>
+        <div id="today">
+            <h2>Today's TodoList</h2>
+            <div id="today-items">
+                <!-- item to be rendered here -->
+            </div>
+        </div>
+        <div id="future">
+            <h2>Future TodoList</h2>
+            <div id="future-items"></div>
+        </div>
+        <div id="completed">
+            <h2>Completed TodoList</h2>
+            <div id="completed-items"></div>
+        </div>
+    </div>
+    <script src="script.js">
+        
+    </script>
+</body>
+
+</html>
